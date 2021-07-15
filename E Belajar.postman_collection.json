@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "85ba0356-addb-405d-ad25-bc1085380f61",
+		"name": "E Belajar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tambah Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "Iqbal",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "iqbal@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "secret",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHRpbWUiOjE2MjYzMzA1NTUsImlkX2FkbWluIjoxfQ.toywREHF0aFE5H0zEsq1POTH72efReota23MXsU8saw",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/tambahAdmin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"tambahAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "helmianto@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "secret",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/loginAdmin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"loginAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hapus Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_user",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHRpbWUiOjE2MjYzMzA1NTUsImlkX2FkbWluIjoxfQ.toywREHF0aFE5H0zEsq1POTH72efReota23MXsU8saw",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/hapusAdmin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"hapusAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHRpbWUiOjE2MjYzMzA1NTUsImlkX2FkbWluIjoxfQ.toywREHF0aFE5H0zEsq1POTH72efReota23MXsU8saw",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/listAdmin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"listAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tambah Konten",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHRpbWUiOjE2MjYzMzA1NTUsImlkX2FkbWluIjoxfQ.toywREHF0aFE5H0zEsq1POTH72efReota23MXsU8saw",
+							"type": "text"
+						},
+						{
+							"key": "judul",
+							"value": "React JS For Beginner",
+							"type": "text"
+						},
+						{
+							"key": "keterangan",
+							"value": "ini materi reactjs",
+							"type": "text"
+						},
+						{
+							"key": "link_thumbnail",
+							"value": "https://s29843.pcdn.co/blog/wp-content/uploads/sites/2/2019/06/YouTube-Thumbnail-Sizes.png",
+							"type": "text"
+						},
+						{
+							"key": "link_video",
+							"value": "https://www.youtube.com/watch?v=nTeuhbP7wdE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/tambahKonten",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"tambahKonten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ubah Konten",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHRpbWUiOjE2MjYzMzg3NTksImlkX2FkbWluIjoxfQ.JtUj8Fj8SSfADqABvNeirYdPxH9optk7hNquxDzKQAk",
+							"type": "text"
+						},
+						{
+							"key": "judul",
+							"value": "React JS",
+							"type": "text"
+						},
+						{
+							"key": "keterangan",
+							"value": "ini materi reactjs",
+							"type": "text"
+						},
+						{
+							"key": "link_thumbnail",
+							"value": "https://s29843.pcdn.co/blog/wp-content/uploads/sites/2/2019/06/YouTube-Thumbnail-Sizes.png",
+							"type": "text"
+						},
+						{
+							"key": "link_video",
+							"value": "https://www.youtube.com/watch?v=nTeuhbP7wdE",
+							"type": "text"
+						},
+						{
+							"key": "id_konten",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/ubahKonten",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ubahKonten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hapus Konten",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHRpbWUiOjE2MjYzMzg3NTksImlkX2FkbWluIjoxfQ.JtUj8Fj8SSfADqABvNeirYdPxH9optk7hNquxDzKQAk",
+							"type": "text"
+						},
+						{
+							"key": "id_konten",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/hapusKonten",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"hapusKonten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Konten",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHRpbWUiOjE2MjYzMzg3NTksImlkX2FkbWluIjoxfQ.JtUj8Fj8SSfADqABvNeirYdPxH9optk7hNquxDzKQAk",
+							"type": "text"
+						},
+						{
+							"key": "id_konten",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/hapusKonten",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"hapusKonten"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
