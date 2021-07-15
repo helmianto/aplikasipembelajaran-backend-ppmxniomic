@@ -316,16 +316,11 @@
 							"key": "token",
 							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHRpbWUiOjE2MjYzMzg3NTksImlkX2FkbWluIjoxfQ.JtUj8Fj8SSfADqABvNeirYdPxH9optk7hNquxDzKQAk",
 							"type": "text"
-						},
-						{
-							"key": "id_konten",
-							"value": "1",
-							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/hapusKonten",
+					"raw": "http://127.0.0.1:8000/listKonten",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -335,7 +330,7 @@
 					],
 					"port": "8000",
 					"path": [
-						"hapusKonten"
+						"listKonten"
 					]
 				}
 			},
